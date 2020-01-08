@@ -12,5 +12,13 @@ int main(char *argv[], int argc){
     printf("Author  : %s\n", AUTHOR);
     printf("Link    : %s\n", LINK);
 
+    /* create Queue     */
+    Queue_ptr queue_ptr = CreateQueue();
+
+    /* silly example    */
+    AddToQueue(queue_ptr, NULL); // in reality we'd never pass NULL !
+
+    /* to-do: add Queue destroy */
+
     return 0;
 }
